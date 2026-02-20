@@ -1,0 +1,3817 @@
+{
+    "content": [
+        {
+            "comment": {
+                "base": "Brainwashed by the rhetoric of the media and officials there. \n\nSuch a tragedy.",
+                "demojified": "Brainwashed by the rhetoric of the media and officials there. \n\nSuch a tragedy."
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9997596144676208
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9997596144676208
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.9696618914604187
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.9696618914604187
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.9131977558135986
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.9131977558135986
+                },
+                "bertweet_emotion": {
+                    "label": "disgust",
+                    "score": 0.9736899733543396
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "disgust",
+                    "score": 0.9736899733543396
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9318188428878784
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9318188428878784
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9894634485244751
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9894634485244751
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "AKA idiot.",
+                "demojified": "AKA idiot."
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9997952580451965
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9997952580451965
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.9777483940124512
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.9777483940124512
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.7434244751930237
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.7434244751930237
+                },
+                "bertweet_emotion": {
+                    "label": "disgust",
+                    "score": 0.8298832774162292
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "disgust",
+                    "score": 0.8298832774162292
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.2725425362586975
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.2725425362586975
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9804757237434387
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9804757237434387
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Alex Pretti, an armed agitator, killed by federal officers while fighting them.\n\nThere, fixed your headline.",
+                "demojified": "Alex Pretti, an armed agitator, killed by federal officers while fighting them.\n\nThere, fixed your headline."
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9961720108985901
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9961720108985901
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.9667927026748657
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.9667927026748657
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.7460299134254456
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.7460299134254456
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.9758287072181702
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.9758287072181702
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9045752286911011
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9045752286911011
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9003983736038208
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9003983736038208
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Alex Pretti should have followed my advice\n\nFollow me for more life saving tips‼️🚨🚨BREAKING\n\nWant to know how to not get shot by law enforcement? 🚔\n\n1) Comply\n2) don’t resist arrest\n3) don’t pull out a gun and fire\n\nFollow me for more life saving advice",
+                "demojified": "Alex Pretti should have followed my advice\n\nFollow me for more life saving tips:double_exclamation_mark::police_car_light::police_car_light:BREAKING\n\nWant to know how to not get shot by law enforcement? :oncoming_police_car:\n\n1) Comply\n2) don’t resist arrest\n3) don’t pull out a gun and fire\n\nFollow me for more life saving advice"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9914336204528809
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9911189675331116
+                },
+                "bertweet_sentiment": {
+                    "label": "NEU",
+                    "score": 0.8441675901412964
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEU",
+                    "score": 0.8348643779754639
+                },
+                "roberta_sentiment": {
+                    "label": "neutral",
+                    "score": 0.7145856022834778
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "neutral",
+                    "score": 0.7060484886169434
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.9770867228507996
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.9785169959068298
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9864684343338013
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9237763285636902
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9983114004135132
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9994181394577026
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "I guess they shouldn’t be pulling guns and biting off fingers and shit.",
+                "demojified": "I guess they shouldn’t be pulling guns and biting off fingers and shit."
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.996894359588623
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.996894359588623
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.9554957747459412
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.9554957747459412
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.8003666996955872
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.8003666996955872
+                },
+                "bertweet_emotion": {
+                    "label": "disgust",
+                    "score": 0.5342683792114258
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "disgust",
+                    "score": 0.5342683792114258
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9494742751121521
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9494742751121521
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.8334397077560425
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.8334397077560425
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "👃🫵🤣",
+                "demojified": ":nose::index_pointing_at_the_viewer::rolling_on_the_floor_laughing:"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.6970561146736145
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9949131011962891
+                },
+                "bertweet_sentiment": {
+                    "label": "NEU",
+                    "score": 0.9005754590034485
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEU",
+                    "score": 0.9291021823883057
+                },
+                "roberta_sentiment": {
+                    "label": "neutral",
+                    "score": 0.7677151560783386
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "neutral",
+                    "score": 0.750801682472229
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.9176534414291382
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.971639096736908
+                },
+                "roberta_language": {
+                    "label": "hi",
+                    "score": 0.5586992502212524
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.47810328006744385
+                },
+                "roberta_ai": {
+                    "label": "AI",
+                    "score": 0.5979129076004028
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.5696645975112915
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "You pieces of shit leave out important details on purpose and EVERYONE knows it.  The media IS the enemy",
+                "demojified": "You pieces of shit leave out important details on purpose and EVERYONE knows it.  The media IS the enemy"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9970296621322632
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9970296621322632
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.9823770523071289
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.9823770523071289
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.9510851502418518
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.9510851502418518
+                },
+                "bertweet_emotion": {
+                    "label": "anger",
+                    "score": 0.9602846503257751
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "anger",
+                    "score": 0.9602846503257751
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.8966736793518066
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.8966736793518066
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9932546019554138
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9932546019554138
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "The man was at a violent protest with a weapon and multiple magazines of Ammo! He was ignorant, he was dangerous! If he had any sense at all, he would know that he would be considered a threat! He has only himself to blame & his ignorance was his undoing! The Mayor & Governor",
+                "demojified": "The man was at a violent protest with a weapon and multiple magazines of Ammo! He was ignorant, he was dangerous! If he had any sense at all, he would know that he would be considered a threat! He has only himself to blame & his ignorance was his undoing! The Mayor & Governor"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9988152980804443
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9988152980804443
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.9766442179679871
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.9766442179679871
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.934053361415863
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.934053361415863
+                },
+                "bertweet_emotion": {
+                    "label": "anger",
+                    "score": 0.9454152584075928
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "anger",
+                    "score": 0.9454152584075928
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9673850536346436
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9673850536346436
+                },
+                "roberta_ai": {
+                    "label": "AI",
+                    "score": 0.7813211679458618
+                },
+                "roberta_ai_demojified": {
+                    "label": "AI",
+                    "score": 0.7813211679458618
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "How MSNow sees him lol",
+                "demojified": "How MSNow sees him lol"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "POSITIVE",
+                    "score": 0.9298535585403442
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "POSITIVE",
+                    "score": 0.9298535585403442
+                },
+                "bertweet_sentiment": {
+                    "label": "NEU",
+                    "score": 0.88580322265625
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEU",
+                    "score": 0.88580322265625
+                },
+                "roberta_sentiment": {
+                    "label": "neutral",
+                    "score": 0.8588521480560303
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "neutral",
+                    "score": 0.8588521480560303
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.9737030863761902
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.9737030863761902
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.8715054988861084
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.8715054988861084
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9971240162849426
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9971240162849426
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "After he brandished a gun.   You left that part out.",
+                "demojified": "After he brandished a gun.   You left that part out."
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9990707039833069
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9990707039833069
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.5247880816459656
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.5247880816459656
+                },
+                "roberta_sentiment": {
+                    "label": "neutral",
+                    "score": 0.4974197447299957
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "neutral",
+                    "score": 0.4974197447299957
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.8870156407356262
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.8870156407356262
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9838924407958984
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9838924407958984
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9619956612586975
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9619956612586975
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "LAKEN was also NURSE‼️\n\nWhere are PROTESTS for LAKEN RILEY⁉️⁉️⁉️",
+                "demojified": "LAKEN was also NURSE:double_exclamation_mark:\n\nWhere are PROTESTS for LAKEN RILEY:exclamation_question_mark::exclamation_question_mark::exclamation_question_mark:"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9165210127830505
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9741712212562561
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.6634348034858704
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.6228429079055786
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.6209121942520142
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "neutral",
+                    "score": 0.5624969601631165
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.8215804696083069
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.8493161201477051
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.6016483306884766
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.5960118174552917
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9690759181976318
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9937816262245178
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "LAKEN was also NURSE‼️\n\nWhere are PROTESTS for LAKEN RILEY⁉️⁉️⁉️",
+                "demojified": "LAKEN was also NURSE:double_exclamation_mark:\n\nWhere are PROTESTS for LAKEN RILEY:exclamation_question_mark::exclamation_question_mark::exclamation_question_mark:"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9165210127830505
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9741712212562561
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.6634348034858704
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.6228429079055786
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.6209121942520142
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "neutral",
+                    "score": 0.5624969601631165
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.8215804696083069
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.8493161201477051
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.6016483306884766
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.5960118174552917
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9690759181976318
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9937816262245178
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "This Alex Pretti?",
+                "demojified": "This Alex Pretti?"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.973341703414917
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.973341703414917
+                },
+                "bertweet_sentiment": {
+                    "label": "NEU",
+                    "score": 0.9445360898971558
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEU",
+                    "score": 0.9445360898971558
+                },
+                "roberta_sentiment": {
+                    "label": "neutral",
+                    "score": 0.9217283129692078
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "neutral",
+                    "score": 0.9217283129692078
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.9675026535987854
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.9675026535987854
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.48672521114349365
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.48672521114349365
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9905656576156616
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9905656576156616
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Who gives a fuck that he was an ICU Nurse.",
+                "demojified": "Who gives a fuck that he was an ICU Nurse."
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9986159801483154
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9986159801483154
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.9744550585746765
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.9744550585746765
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.8815131783485413
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.8815131783485413
+                },
+                "bertweet_emotion": {
+                    "label": "anger",
+                    "score": 0.8501321077346802
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "anger",
+                    "score": 0.8501321077346802
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.8232532143592834
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.8232532143592834
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9358605146408081
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9358605146408081
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Imagine dying for a cause and some 20-something, writer's aide, at MS NOW, decided you were not pretty enough, to be her martyr ...Alex Pretti’s picture was edited using AI to make him appear “prettier” for the public.\n\nMSNBC broadcast the edited image on air, and the same image was displayed during a memorial at the recent New York Sirens vs. Minnesota Frost matchup. \n\nFollow: @USER",
+                "demojified": "Imagine dying for a cause and some 20-something, writer's aide, at MS NOW, decided you were not pretty enough, to be her martyr ...Alex Pretti’s picture was edited using AI to make him appear “prettier” for the public.\n\nMSNBC broadcast the edited image on air, and the same image was displayed during a memorial at the recent New York Sirens vs. Minnesota Frost matchup. \n\nFollow: @USER"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9991452693939209
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9991452693939209
+                },
+                "bertweet_sentiment": {
+                    "label": "NEU",
+                    "score": 0.643571674823761
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEU",
+                    "score": 0.643571674823761
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.5414722561836243
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.5414722561836243
+                },
+                "bertweet_emotion": {
+                    "label": "disgust",
+                    "score": 0.9293188452720642
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "disgust",
+                    "score": 0.9293188452720642
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9141894578933716
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9141894578933716
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9981580376625061
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9981580376625061
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Do not arm yourself and mess around with law enforcement.",
+                "demojified": "Do not arm yourself and mess around with law enforcement."
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "POSITIVE",
+                    "score": 0.847838819026947
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "POSITIVE",
+                    "score": 0.847838819026947
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.8135801553726196
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.8135801553726196
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.6300770044326782
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.6300770044326782
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.9170859456062317
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.9170859456062317
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9784889221191406
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9784889221191406
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.8445338606834412
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.8445338606834412
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Don't fight cops while armed with a firearm.",
+                "demojified": "Don't fight cops while armed with a firearm."
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.7692910432815552
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.7692910432815552
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.7070420384407043
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.7070420384407043
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.5488491654396057
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.5488491654396057
+                },
+                "bertweet_emotion": {
+                    "label": "fear",
+                    "score": 0.9075565934181213
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "fear",
+                    "score": 0.9075565934181213
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9043057560920715
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9043057560920715
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.7720085382461548
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.7720085382461548
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "If he had stayed 30 feet away from the law-enforcement at all times he’d be home right now kicking back and relaxing watching TV drinking a beer or doing whatever\n\nThe dumb protesters can’t seem to wrap it around their brains to stay 30 feet away from law-enforcement",
+                "demojified": "If he had stayed 30 feet away from the law-enforcement at all times he’d be home right now kicking back and relaxing watching TV drinking a beer or doing whatever\n\nThe dumb protesters can’t seem to wrap it around their brains to stay 30 feet away from law-enforcement"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9954686164855957
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9954686164855957
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.9473237991333008
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.9473237991333008
+                },
+                "roberta_sentiment": {
+                    "label": "neutral",
+                    "score": 0.5185638070106506
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "neutral",
+                    "score": 0.5185638070106506
+                },
+                "bertweet_emotion": {
+                    "label": "disgust",
+                    "score": 0.97712641954422
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "disgust",
+                    "score": 0.97712641954422
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.8935255408287048
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.8935255408287048
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9705411195755005
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9705411195755005
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Alex Pretti\n\nAnd Alex Prettier",
+                "demojified": "Alex Pretti\n\nAnd Alex Prettier"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "POSITIVE",
+                    "score": 0.9987610578536987
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "POSITIVE",
+                    "score": 0.9987610578536987
+                },
+                "bertweet_sentiment": {
+                    "label": "NEU",
+                    "score": 0.5773794651031494
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEU",
+                    "score": 0.5773794651031494
+                },
+                "roberta_sentiment": {
+                    "label": "neutral",
+                    "score": 0.787463903427124
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "neutral",
+                    "score": 0.787463903427124
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.9649798274040222
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.9649798274040222
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.6753444075584412
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.6753444075584412
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9873457551002502
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9873457551002502
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Here:\nLook, his picture is next to \"Useful Idiot:\"",
+                "demojified": "Here:\nLook, his picture is next to \"Useful Idiot:\""
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9990088939666748
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9990088939666748
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.970221757888794
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.970221757888794
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.6979824900627136
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.6979824900627136
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.9536454677581787
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.9536454677581787
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.8748802542686462
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.8748802542686462
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9953899383544922
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9953899383544922
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "When given the option of being a nurse and caring for the sick, and injured, or being a Bolshevik that interferes with law enforcement carrying out lawful federal orders, choose nursing. He chose wrong. They are trigger happy enough, reaching for ANYTHING  is a bad idea.",
+                "demojified": "When given the option of being a nurse and caring for the sick, and injured, or being a Bolshevik that interferes with law enforcement carrying out lawful federal orders, choose nursing. He chose wrong. They are trigger happy enough, reaching for ANYTHING  is a bad idea."
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9977371692657471
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9977371692657471
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.9222930669784546
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.9222930669784546
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.8282302021980286
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.8282302021980286
+                },
+                "bertweet_emotion": {
+                    "label": "disgust",
+                    "score": 0.963929295539856
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "disgust",
+                    "score": 0.963929295539856
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9400702714920044
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9400702714920044
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9914864301681519
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9914864301681519
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Oh the poor baby. You would think a nurse would understand provoking a confrontation could lead to lead poisoning",
+                "demojified": "Oh the poor baby. You would think a nurse would understand provoking a confrontation could lead to lead poisoning"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9990233182907104
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9990233182907104
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.9591359496116638
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.9591359496116638
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.9039214253425598
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.9039214253425598
+                },
+                "bertweet_emotion": {
+                    "label": "disgust",
+                    "score": 0.38219374418258667
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "disgust",
+                    "score": 0.38219374418258667
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9368461966514587
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9368461966514587
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.6615347266197205
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.6615347266197205
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Too bad he was a psycho and terrorist",
+                "demojified": "Too bad he was a psycho and terrorist"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9986397624015808
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9986397624015808
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.9727126955986023
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.9727126955986023
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.921907901763916
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.921907901763916
+                },
+                "bertweet_emotion": {
+                    "label": "disgust",
+                    "score": 0.9585849046707153
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "disgust",
+                    "score": 0.9585849046707153
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9840036034584045
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9840036034584045
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9478498697280884
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9478498697280884
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Show his high school graduation picture and his 8th grade graduation picture for good measure. He lost his life protesting a lawful police action. I hope it was worth it.",
+                "demojified": "Show his high school graduation picture and his 8th grade graduation picture for good measure. He lost his life protesting a lawful police action. I hope it was worth it."
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "POSITIVE",
+                    "score": 0.9053159952163696
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "POSITIVE",
+                    "score": 0.9053159952163696
+                },
+                "bertweet_sentiment": {
+                    "label": "NEU",
+                    "score": 0.6621295809745789
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEU",
+                    "score": 0.6621295809745789
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.5387981534004211
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.5387981534004211
+                },
+                "bertweet_emotion": {
+                    "label": "sadness",
+                    "score": 0.9751585125923157
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "sadness",
+                    "score": 0.9751585125923157
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9687721729278564
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9687721729278564
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9898052215576172
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9898052215576172
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Because he pulled a gun on them. Not great decision making abilities for a medical professional. Hopefully he gave his patients the correct medication regardless of their political affiliation.",
+                "demojified": "Because he pulled a gun on them. Not great decision making abilities for a medical professional. Hopefully he gave his patients the correct medication regardless of their political affiliation."
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9982038736343384
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9982038736343384
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.9583132863044739
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.9583132863044739
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.8565396666526794
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.8565396666526794
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.556036114692688
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.556036114692688
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9923719167709351
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9923719167709351
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9870095252990723
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9870095252990723
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "brings GUN and high capacity mags to a \"peaceful protest\"  - something there isn't right",
+                "demojified": "brings GUN and high capacity mags to a \"peaceful protest\"  - something there isn't right"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9782765507698059
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9782765507698059
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.9557934403419495
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.9557934403419495
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.8444810509681702
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.8444810509681702
+                },
+                "bertweet_emotion": {
+                    "label": "disgust",
+                    "score": 0.9603875875473022
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "disgust",
+                    "score": 0.9603875875473022
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.8567630052566528
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.8567630052566528
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.8986169099807739
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.8986169099807739
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "God bless our ICE agents. They do Gods work 🇺🇸",
+                "demojified": "God bless our ICE agents. They do Gods work :United_States:"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "POSITIVE",
+                    "score": 0.9943563342094421
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "POSITIVE",
+                    "score": 0.9966880679130554
+                },
+                "bertweet_sentiment": {
+                    "label": "POS",
+                    "score": 0.9914293885231018
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "POS",
+                    "score": 0.9912365674972534
+                },
+                "roberta_sentiment": {
+                    "label": "positive",
+                    "score": 0.975057065486908
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "positive",
+                    "score": 0.9719579815864563
+                },
+                "bertweet_emotion": {
+                    "label": "joy",
+                    "score": 0.975274920463562
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "joy",
+                    "score": 0.9746676683425903
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.841597318649292
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.8252506256103516
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9687445759773254
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9976617097854614
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Oh well, the deportations will continue.",
+                "demojified": "Oh well, the deportations will continue."
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9693803191184998
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9693803191184998
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.8782329559326172
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.8782329559326172
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.7241975665092468
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.7241975665092468
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.9444295167922974
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.9444295167922974
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9332801103591919
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9332801103591919
+                },
+                "roberta_ai": {
+                    "label": "AI",
+                    "score": 0.634122371673584
+                },
+                "roberta_ai_demojified": {
+                    "label": "AI",
+                    "score": 0.634122371673584
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "You mean a paid agitator?",
+                "demojified": "You mean a paid agitator?"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9955071210861206
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9955071210861206
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.811870276927948
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.811870276927948
+                },
+                "roberta_sentiment": {
+                    "label": "neutral",
+                    "score": 0.6528156399726868
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "neutral",
+                    "score": 0.6528156399726868
+                },
+                "bertweet_emotion": {
+                    "label": "disgust",
+                    "score": 0.9710644483566284
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "disgust",
+                    "score": 0.9710644483566284
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.6636752486228943
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.6636752486228943
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.7084532380104065
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.7084532380104065
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Do you have anymore fake images of him?",
+                "demojified": "Do you have anymore fake images of him?"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9991397857666016
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9991397857666016
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.5749138593673706
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.5749138593673706
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.6471226811408997
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.6471226811408997
+                },
+                "bertweet_emotion": {
+                    "label": "disgust",
+                    "score": 0.9245632886886597
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "disgust",
+                    "score": 0.9245632886886597
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9606477618217468
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9606477618217468
+                },
+                "roberta_ai": {
+                    "label": "AI",
+                    "score": 0.8401892185211182
+                },
+                "roberta_ai_demojified": {
+                    "label": "AI",
+                    "score": 0.8401892185211182
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "...because he drew a gun on armed law enforcement officers",
+                "demojified": "...because he drew a gun on armed law enforcement officers"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9965435862541199
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9965435862541199
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.8163512349128723
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.8163512349128723
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.6143473982810974
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.6143473982810974
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.8913706541061401
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.8913706541061401
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.8563401699066162
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.8563401699066162
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9283753037452698
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9283753037452698
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Justified",
+                "demojified": "Justified"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "POSITIVE",
+                    "score": 0.999079704284668
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "POSITIVE",
+                    "score": 0.999079704284668
+                },
+                "bertweet_sentiment": {
+                    "label": "NEU",
+                    "score": 0.9284126162528992
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEU",
+                    "score": 0.9284126162528992
+                },
+                "roberta_sentiment": {
+                    "label": "neutral",
+                    "score": 0.6330015659332275
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "neutral",
+                    "score": 0.6330015659332275
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.948262095451355
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.948262095451355
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9932494163513184
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9932494163513184
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9972273707389832
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9972273707389832
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Nature weeding out the Stupid.",
+                "demojified": "Nature weeding out the Stupid."
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9992508292198181
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9992508292198181
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.7840490341186523
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.7840490341186523
+                },
+                "roberta_sentiment": {
+                    "label": "neutral",
+                    "score": 0.5915758013725281
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "neutral",
+                    "score": 0.5915758013725281
+                },
+                "bertweet_emotion": {
+                    "label": "disgust",
+                    "score": 0.8812154531478882
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "disgust",
+                    "score": 0.8812154531478882
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9937560558319092
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9937560558319092
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9876348376274109
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9876348376274109
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "He was a domestic terrorist",
+                "demojified": "He was a domestic terrorist"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9872638583183289
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9872638583183289
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.9697341918945312
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.9697341918945312
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.8182218074798584
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.8182218074798584
+                },
+                "bertweet_emotion": {
+                    "label": "disgust",
+                    "score": 0.8175510764122009
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "disgust",
+                    "score": 0.8175510764122009
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.8326097130775452
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.8326097130775452
+                },
+                "roberta_ai": {
+                    "label": "AI",
+                    "score": 0.6382482647895813
+                },
+                "roberta_ai_demojified": {
+                    "label": "AI",
+                    "score": 0.6382482647895813
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "He probably shouldn't have pulled a gun on the feds.",
+                "demojified": "He probably shouldn't have pulled a gun on the feds."
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9991897940635681
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9991897940635681
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.8090913891792297
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.8090913891792297
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.7907485961914062
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.7907485961914062
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.7816298604011536
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.7816298604011536
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9392074346542358
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9392074346542358
+                },
+                "roberta_ai": {
+                    "label": "AI",
+                    "score": 0.5950366854667664
+                },
+                "roberta_ai_demojified": {
+                    "label": "AI",
+                    "score": 0.5950366854667664
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Actually, he had been UNEMPLOYED FOR MONTHS.\n\nYOU PEOPLE JUST CANT NOT LIE, CAN YOU?\n🤦🏼‍♀️",
+                "demojified": "Actually, he had been UNEMPLOYED FOR MONTHS.\n\nYOU PEOPLE JUST CANT NOT LIE, CAN YOU?\n:woman_facepalming_medium-light_skin_tone:"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "POSITIVE",
+                    "score": 0.9462682008743286
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "POSITIVE",
+                    "score": 0.9633862972259521
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.9627190232276917
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.9586326479911804
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.7794632911682129
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.6043316721916199
+                },
+                "bertweet_emotion": {
+                    "label": "anger",
+                    "score": 0.9345906376838684
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "anger",
+                    "score": 0.9470032453536987
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9674926400184631
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.878671407699585
+                },
+                "roberta_ai": {
+                    "label": "AI",
+                    "score": 0.5656001567840576
+                },
+                "roberta_ai_demojified": {
+                    "label": "AI",
+                    "score": 0.5546088218688965
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "With a pistol and 51 rounds of ammo.",
+                "demojified": "With a pistol and 51 rounds of ammo."
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.6163207292556763
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.6163207292556763
+                },
+                "bertweet_sentiment": {
+                    "label": "NEU",
+                    "score": 0.957633912563324
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEU",
+                    "score": 0.957633912563324
+                },
+                "roberta_sentiment": {
+                    "label": "neutral",
+                    "score": 0.8586751818656921
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "neutral",
+                    "score": 0.8586751818656921
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.9626210331916809
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.9626210331916809
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.980146586894989
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.980146586894989
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9168782234191895
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9168782234191895
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Murdered 😡😡",
+                "demojified": "Murdered :enraged_face::enraged_face:"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9966211318969727
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9983651041984558
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.9724578261375427
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.9710971117019653
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.8843507170677185
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.8501497507095337
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.6857196688652039
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.703355073928833
+                },
+                "roberta_language": {
+                    "label": "hi",
+                    "score": 0.8897106051445007
+                },
+                "roberta_language_demojified": {
+                    "label": "tr",
+                    "score": 0.40822216868400574
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9770798683166504
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.964451789855957
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Nah , nah , nah hey hey \"goodbye",
+                "demojified": "Nah , nah , nah hey hey \"goodbye"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.998387336730957
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.998387336730957
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.768202543258667
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.768202543258667
+                },
+                "roberta_sentiment": {
+                    "label": "neutral",
+                    "score": 0.6601033806800842
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "neutral",
+                    "score": 0.6601033806800842
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.7332137823104858
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.7332137823104858
+                },
+                "roberta_language": {
+                    "label": "sw",
+                    "score": 0.5532636046409607
+                },
+                "roberta_language_demojified": {
+                    "label": "sw",
+                    "score": 0.5532636046409607
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9893128275871277
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9893128275871277
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "FAFO",
+                "demojified": "FAFO"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "POSITIVE",
+                    "score": 0.9508625268936157
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "POSITIVE",
+                    "score": 0.9508625268936157
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.5190500020980835
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.5190500020980835
+                },
+                "roberta_sentiment": {
+                    "label": "neutral",
+                    "score": 0.4612158238887787
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "neutral",
+                    "score": 0.4612158238887787
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.8629217147827148
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.8629217147827148
+                },
+                "roberta_language": {
+                    "label": "ur",
+                    "score": 0.3975883424282074
+                },
+                "roberta_language_demojified": {
+                    "label": "ur",
+                    "score": 0.3975883424282074
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9599610567092896
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9599610567092896
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "The Nurse",
+                "demojified": "The Nurse"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "POSITIVE",
+                    "score": 0.9856385588645935
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "POSITIVE",
+                    "score": 0.9856385588645935
+                },
+                "bertweet_sentiment": {
+                    "label": "NEU",
+                    "score": 0.9401870369911194
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEU",
+                    "score": 0.9401870369911194
+                },
+                "roberta_sentiment": {
+                    "label": "neutral",
+                    "score": 0.7836210131645203
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "neutral",
+                    "score": 0.7836210131645203
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.8807942867279053
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.8807942867279053
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.7404471635818481
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.7404471635818481
+                },
+                "roberta_ai": {
+                    "label": "AI",
+                    "score": 0.6944887638092041
+                },
+                "roberta_ai_demojified": {
+                    "label": "AI",
+                    "score": 0.6944887638092041
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Condolences to his family.\nAs for some of the hateful comments on here, go take the blinkers off",
+                "demojified": "Condolences to his family.\nAs for some of the hateful comments on here, go take the blinkers off"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9654542803764343
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9654542803764343
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.9188314080238342
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.9188314080238342
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.700304388999939
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.700304388999939
+                },
+                "bertweet_emotion": {
+                    "label": "disgust",
+                    "score": 0.46583491563796997
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "disgust",
+                    "score": 0.46583491563796997
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9682897925376892
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9682897925376892
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9259043335914612
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9259043335914612
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "I want to give my sympathy to his family and all who knew him. He is loved.",
+                "demojified": "I want to give my sympathy to his family and all who knew him. He is loved."
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "POSITIVE",
+                    "score": 0.9988904595375061
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "POSITIVE",
+                    "score": 0.9988904595375061
+                },
+                "bertweet_sentiment": {
+                    "label": "POS",
+                    "score": 0.9735182523727417
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "POS",
+                    "score": 0.9735182523727417
+                },
+                "roberta_sentiment": {
+                    "label": "positive",
+                    "score": 0.8173267841339111
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "positive",
+                    "score": 0.8173267841339111
+                },
+                "bertweet_emotion": {
+                    "label": "sadness",
+                    "score": 0.9909648895263672
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "sadness",
+                    "score": 0.9909648895263672
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9900549650192261
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9900549650192261
+                },
+                "roberta_ai": {
+                    "label": "AI",
+                    "score": 0.7762018442153931
+                },
+                "roberta_ai_demojified": {
+                    "label": "AI",
+                    "score": 0.7762018442153931
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Lol, you alter the pic of a dead man. Was he to white and Jewish looking?UPDATE: MSNBC just quietly deleted the AI image of Alex Pretti from the original link  x.com/EndWokeness/st…",
+                "demojified": "Lol, you alter the pic of a dead man. Was he to white and Jewish looking?UPDATE: MSNBC just quietly deleted the AI image of Alex Pretti from the original link  x.com/EndWokeness/st…"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9996634721755981
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9996634721755981
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.8252082467079163
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.8252082467079163
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.744805097579956
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.744805097579956
+                },
+                "bertweet_emotion": {
+                    "label": "disgust",
+                    "score": 0.8736311197280884
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "disgust",
+                    "score": 0.8736311197280884
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.8691428899765015
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.8691428899765015
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9961158037185669
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9961158037185669
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Was he caring for sick people in an ICU when he was killed? Was he carrying an injection for a patient? What was he carrying when he was shot?",
+                "demojified": "Was he caring for sick people in an ICU when he was killed? Was he carrying an injection for a patient? What was he carrying when he was shot?"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9987058639526367
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9987058639526367
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.6391061544418335
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.6391061544418335
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.4973342716693878
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.4973342716693878
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.975658655166626
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.975658655166626
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9562696814537048
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9562696814537048
+                },
+                "roberta_ai": {
+                    "label": "AI",
+                    "score": 0.7746737599372864
+                },
+                "roberta_ai_demojified": {
+                    "label": "AI",
+                    "score": 0.7746737599372864
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Sedition and treason. FAFO",
+                "demojified": "Sedition and treason. FAFO"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9908033609390259
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9908033609390259
+                },
+                "bertweet_sentiment": {
+                    "label": "NEU",
+                    "score": 0.7898091673851013
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEU",
+                    "score": 0.7898091673851013
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.8581034541130066
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.8581034541130066
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.6535536050796509
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.6535536050796509
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9493219256401062
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9493219256401062
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9945482611656189
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9945482611656189
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Obey the law",
+                "demojified": "Obey the law"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "POSITIVE",
+                    "score": 0.9947713017463684
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "POSITIVE",
+                    "score": 0.9947713017463684
+                },
+                "bertweet_sentiment": {
+                    "label": "NEU",
+                    "score": 0.8794310688972473
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEU",
+                    "score": 0.8794310688972473
+                },
+                "roberta_sentiment": {
+                    "label": "neutral",
+                    "score": 0.7569844722747803
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "neutral",
+                    "score": 0.7569844722747803
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.44622933864593506
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.44622933864593506
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9180666208267212
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9180666208267212
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9787237644195557
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9787237644195557
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "“He was peaceful, he would never obstruct or interfere”",
+                "demojified": "“He was peaceful, he would never obstruct or interfere”"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "POSITIVE",
+                    "score": 0.999543309211731
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "POSITIVE",
+                    "score": 0.999543309211731
+                },
+                "bertweet_sentiment": {
+                    "label": "POS",
+                    "score": 0.6004843711853027
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "POS",
+                    "score": 0.6004843711853027
+                },
+                "roberta_sentiment": {
+                    "label": "neutral",
+                    "score": 0.6211221218109131
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "neutral",
+                    "score": 0.6211221218109131
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.8941295146942139
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.8941295146942139
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9925938248634338
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9925938248634338
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.7814643383026123
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.7814643383026123
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Are these images altered?",
+                "demojified": "Are these images altered?"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9970316886901855
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9970316886901855
+                },
+                "bertweet_sentiment": {
+                    "label": "NEU",
+                    "score": 0.9612571001052856
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEU",
+                    "score": 0.9612571001052856
+                },
+                "roberta_sentiment": {
+                    "label": "neutral",
+                    "score": 0.8089926242828369
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "neutral",
+                    "score": 0.8089926242828369
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.9565100073814392
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.9565100073814392
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9914966821670532
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9914966821670532
+                },
+                "roberta_ai": {
+                    "label": "AI",
+                    "score": 0.9762068390846252
+                },
+                "roberta_ai_demojified": {
+                    "label": "AI",
+                    "score": 0.9762068390846252
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Where’s the picture where Pretti is pretty?",
+                "demojified": "Where’s the picture where Pretti is pretty?"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9925016164779663
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9925016164779663
+                },
+                "bertweet_sentiment": {
+                    "label": "NEU",
+                    "score": 0.9493981599807739
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEU",
+                    "score": 0.9493981599807739
+                },
+                "roberta_sentiment": {
+                    "label": "neutral",
+                    "score": 0.7022704482078552
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "neutral",
+                    "score": 0.7022704482078552
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.9712200164794922
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.9712200164794922
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9005158543586731
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9005158543586731
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9792463183403015
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9792463183403015
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "FUCK YOU, ENEMY OF THE PEOPLE.  I SUPPORT YOUR CEO TO BE HÜ NG FOR THE CRIME OF PITTING NEIGHBOR VS NEIGHBOR BECAUSE OF LIES",
+                "demojified": "FUCK YOU, ENEMY OF THE PEOPLE.  I SUPPORT YOUR CEO TO BE HÜ NG FOR THE CRIME OF PITTING NEIGHBOR VS NEIGHBOR BECAUSE OF LIES"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.970575213432312
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.970575213432312
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.9826755523681641
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.9826755523681641
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.9454703330993652
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.9454703330993652
+                },
+                "bertweet_emotion": {
+                    "label": "anger",
+                    "score": 0.9822090268135071
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "anger",
+                    "score": 0.9822090268135071
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.742542028427124
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.742542028427124
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9957001209259033
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9957001209259033
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "STOP EDITING HIS PHOTO!!!!  Or get SUED",
+                "demojified": "STOP EDITING HIS PHOTO!!!!  Or get SUED"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9994558691978455
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9994558691978455
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.9669405817985535
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.9669405817985535
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.8970409035682678
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.8970409035682678
+                },
+                "bertweet_emotion": {
+                    "label": "anger",
+                    "score": 0.9795287847518921
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "anger",
+                    "score": 0.9795287847518921
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9004077315330505
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9004077315330505
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9979739785194397
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9979739785194397
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Lesson to all:  NEVER bring a gun into a politically charged situation and then inject yourself into a physical struggle between the authorities and those they are seeking!",
+                "demojified": "Lesson to all:  NEVER bring a gun into a politically charged situation and then inject yourself into a physical struggle between the authorities and those they are seeking!"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9187393188476562
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9187393188476562
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.8820692300796509
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.8820692300796509
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.681780219078064
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.681780219078064
+                },
+                "bertweet_emotion": {
+                    "label": "disgust",
+                    "score": 0.9332345128059387
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "disgust",
+                    "score": 0.9332345128059387
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.907667338848114
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.907667338848114
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.7586957812309265
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.7586957812309265
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Rightfully so",
+                "demojified": "Rightfully so"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "POSITIVE",
+                    "score": 0.9986599683761597
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "POSITIVE",
+                    "score": 0.9986599683761597
+                },
+                "bertweet_sentiment": {
+                    "label": "POS",
+                    "score": 0.8878538012504578
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "POS",
+                    "score": 0.8878538012504578
+                },
+                "roberta_sentiment": {
+                    "label": "neutral",
+                    "score": 0.5801647901535034
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "neutral",
+                    "score": 0.5801647901535034
+                },
+                "bertweet_emotion": {
+                    "label": "sadness",
+                    "score": 0.6242164969444275
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "sadness",
+                    "score": 0.6242164969444275
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9531530141830444
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9531530141830444
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.997948944568634
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.997948944568634
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Killed by Walz and Frye",
+                "demojified": "Killed by Walz and Frye"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9991884827613831
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9991884827613831
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.8611922860145569
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.8611922860145569
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.6333377957344055
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.6333377957344055
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.9052236676216125
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.9052236676216125
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.8480229377746582
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.8480229377746582
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9844402074813843
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9844402074813843
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Poor little nurse got they/them self killed. \n\nWhy didn’t he just resist his way out?!",
+                "demojified": "Poor little nurse got they/them self killed. \n\nWhy didn’t he just resist his way out?!"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9918700456619263
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9918700456619263
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.9765539169311523
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.9765539169311523
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.9403584003448486
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.9403584003448486
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.5766136646270752
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.5766136646270752
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9919082522392273
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9919082522392273
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9876024127006531
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9876024127006531
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "I’m thinking it’s even too late for TACO trump to control his Fascist Gestapo Thugs now!\n\n \n \n \n \n",
+                "demojified": "I’m thinking it’s even too late for TACO trump to control his Fascist Gestapo Thugs now!\n\n \n \n \n \n"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9990049004554749
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9990049004554749
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.9533534049987793
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.9533534049987793
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.9148297309875488
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.9148297309875488
+                },
+                "bertweet_emotion": {
+                    "label": "disgust",
+                    "score": 0.961700439453125
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "disgust",
+                    "score": 0.961700439453125
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.7459213137626648
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.7459213137626648
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9845897555351257
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9845897555351257
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "I’m thinking it’s even too late for TACO trump to control his Fascist Gestapo Thugs now!\n\n \n \n \n \n",
+                "demojified": "I’m thinking it’s even too late for TACO trump to control his Fascist Gestapo Thugs now!\n\n \n \n \n \n"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9990049004554749
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9990049004554749
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.9533534049987793
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.9533534049987793
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.9148297309875488
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.9148297309875488
+                },
+                "bertweet_emotion": {
+                    "label": "disgust",
+                    "score": 0.961700439453125
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "disgust",
+                    "score": 0.961700439453125
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.7459213137626648
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.7459213137626648
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9845897555351257
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9845897555351257
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Lunatic",
+                "demojified": "Lunatic"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9997039437294006
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9997039437294006
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.918337881565094
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.918337881565094
+                },
+                "roberta_sentiment": {
+                    "label": "neutral",
+                    "score": 0.7295699119567871
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "neutral",
+                    "score": 0.7295699119567871
+                },
+                "bertweet_emotion": {
+                    "label": "disgust",
+                    "score": 0.9633522033691406
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "disgust",
+                    "score": 0.9633522033691406
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.8667027354240417
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.8667027354240417
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9762582182884216
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9762582182884216
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": " should book  on every show on the network, he spells things out in plain legal terms.",
+                "demojified": " should book  on every show on the network, he spells things out in plain legal terms."
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9977688789367676
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9977688789367676
+                },
+                "bertweet_sentiment": {
+                    "label": "NEU",
+                    "score": 0.918848991394043
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEU",
+                    "score": 0.918848991394043
+                },
+                "roberta_sentiment": {
+                    "label": "neutral",
+                    "score": 0.6238341331481934
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "neutral",
+                    "score": 0.6238341331481934
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.9761011004447937
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.9761011004447937
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9592702388763428
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9592702388763428
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.8926203846931458
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.8926203846931458
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Tragedy. Don’t interfere with law enforcement, armed.",
+                "demojified": "Tragedy. Don’t interfere with law enforcement, armed."
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "POSITIVE",
+                    "score": 0.964570164680481
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "POSITIVE",
+                    "score": 0.964570164680481
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.8495967388153076
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.8495967388153076
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.8472204208374023
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.8472204208374023
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.9587440490722656
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.9587440490722656
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9458824992179871
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9458824992179871
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9894170165061951
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9894170165061951
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "All over trying to protect dangerous illegal immigrants. \nStupid",
+                "demojified": "All over trying to protect dangerous illegal immigrants. \nStupid"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9997689127922058
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9997689127922058
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.9765062928199768
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.9765062928199768
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.8620231747627258
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.8620231747627258
+                },
+                "bertweet_emotion": {
+                    "label": "disgust",
+                    "score": 0.9049755334854126
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "disgust",
+                    "score": 0.9049755334854126
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.8994779586791992
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.8994779586791992
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9935312867164612
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9935312867164612
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Provocateur armed provoked officers",
+                "demojified": "Provocateur armed provoked officers"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "POSITIVE",
+                    "score": 0.978465735912323
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "POSITIVE",
+                    "score": 0.978465735912323
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.9066091775894165
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.9066091775894165
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.6532637476921082
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.6532637476921082
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.7784425020217896
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.7784425020217896
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.3918488323688507
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.3918488323688507
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9597012996673584
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9597012996673584
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Not anymore",
+                "demojified": "Not anymore"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9877838492393494
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9877838492393494
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.6637284755706787
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.6637284755706787
+                },
+                "roberta_sentiment": {
+                    "label": "neutral",
+                    "score": 0.6417677402496338
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "neutral",
+                    "score": 0.6417677402496338
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.7387622594833374
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.7387622594833374
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9927190542221069
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9927190542221069
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9896246790885925
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9896246790885925
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Could have been a Saint, FAFO",
+                "demojified": "Could have been a Saint, FAFO"
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.962805986404419
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.962805986404419
+                },
+                "bertweet_sentiment": {
+                    "label": "NEU",
+                    "score": 0.9221051335334778
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEU",
+                    "score": 0.9221051335334778
+                },
+                "roberta_sentiment": {
+                    "label": "neutral",
+                    "score": 0.6904991269111633
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "neutral",
+                    "score": 0.6904991269111633
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.9676588177680969
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.9676588177680969
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.8027620315551758
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.8027620315551758
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.986932098865509
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.986932098865509
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Should have known what. FAFO is.",
+                "demojified": "Should have known what. FAFO is."
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9955894947052002
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9955894947052002
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.7007222771644592
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.7007222771644592
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.6100937128067017
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.6100937128067017
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.5857493281364441
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.5857493281364441
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9665166735649109
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9665166735649109
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.9819997549057007
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.9819997549057007
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "Oh no.",
+                "demojified": "Oh no."
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "NEGATIVE",
+                    "score": 0.9983035326004028
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "NEGATIVE",
+                    "score": 0.9983035326004028
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.9227060079574585
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.9227060079574585
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.622481107711792
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.622481107711792
+                },
+                "bertweet_emotion": {
+                    "label": "others",
+                    "score": 0.7962284684181213
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "others",
+                    "score": 0.7962284684181213
+                },
+                "roberta_language": {
+                    "label": "sw",
+                    "score": 0.46244016289711
+                },
+                "roberta_language_demojified": {
+                    "label": "sw",
+                    "score": 0.46244016289711
+                },
+                "roberta_ai": {
+                    "label": "AI",
+                    "score": 0.9390459060668945
+                },
+                "roberta_ai_demojified": {
+                    "label": "AI",
+                    "score": 0.9390459060668945
+                }
+            }
+        },
+        {
+            "comment": {
+                "base": "He is far more than just a nurse. He had an other training and was deliberately inserting himself into federal law-enforcement, arrest events along with several other people.",
+                "demojified": "He is far more than just a nurse. He had an other training and was deliberately inserting himself into federal law-enforcement, arrest events along with several other people."
+            },
+            "classification": {
+                "distilbert_sentiment": {
+                    "label": "POSITIVE",
+                    "score": 0.9129366874694824
+                },
+                "distilbert_sentiment_demojified": {
+                    "label": "POSITIVE",
+                    "score": 0.9129366874694824
+                },
+                "bertweet_sentiment": {
+                    "label": "NEG",
+                    "score": 0.7705228924751282
+                },
+                "bertweet_sentiment_demojified": {
+                    "label": "NEG",
+                    "score": 0.7705228924751282
+                },
+                "roberta_sentiment": {
+                    "label": "negative",
+                    "score": 0.7188037037849426
+                },
+                "roberta_sentiment_demojified": {
+                    "label": "negative",
+                    "score": 0.7188037037849426
+                },
+                "bertweet_emotion": {
+                    "label": "disgust",
+                    "score": 0.9585682153701782
+                },
+                "bertweet_emotion_demojified": {
+                    "label": "disgust",
+                    "score": 0.9585682153701782
+                },
+                "roberta_language": {
+                    "label": "en",
+                    "score": 0.9444224834442139
+                },
+                "roberta_language_demojified": {
+                    "label": "en",
+                    "score": 0.9444224834442139
+                },
+                "roberta_ai": {
+                    "label": "Human",
+                    "score": 0.6358232498168945
+                },
+                "roberta_ai_demojified": {
+                    "label": "Human",
+                    "score": 0.6358232498168945
+                }
+            }
+        }
+    ],
+    "statistics": {
+        "amount": 68,
+        "crawl_time": 34.00873589515686,
+        "bert_analysis_time": 4.366683721542358
+    }
+}
