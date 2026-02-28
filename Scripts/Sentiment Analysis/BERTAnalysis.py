@@ -16,7 +16,7 @@ modelsToParams = {
     "emotions": ["text-classification", "finiteautomata/bertweet-base-emotion-analysis", 128],
     "roberta_ai": ["text-classification", "fakespot-ai/roberta-base-ai-text-detection-v1", 512],
     "bertweet_emotion": ["text-classification", "finiteautomata/bertweet-base-emotion-analysis", 128]
-}
+} 
 topicToPrompt = {
     "Minneapolis ICE shooting protests": "protests about a woman (Rene Good) getting killed by an ICE agent in Minneapolis",
     "Trump inauguration":  "Trump's second inauguration as the 47th president of the United States",

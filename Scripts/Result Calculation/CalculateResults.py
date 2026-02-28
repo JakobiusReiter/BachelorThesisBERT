@@ -18,7 +18,7 @@ topicToLeaning = {
     "Alex Pretti shooting": [.4,1]
 }
 models = ["distilbert_sentiment", "bertweet_sentiment", "roberta_sentiment", "bertweet_emotion", "roberta_language", "roberta_ai", "mistral_sentiment"]
-sentimentModels = ["distilbert_sentiment", "bertweet_sentiment", "roberta_sentiment"]
+sentimentModels = ["distilbert_sentiment", "bertweet_sentiment", "roberta_sentiment", "mistral_sentiment"]
 choices = ["weighted", "all", "vote", "highest", "sorted"]
 modelToModelShort = {
     "distilbert_sentiment": "dist",
@@ -42,6 +42,17 @@ def CalculateLeaning(negative, neutral, positive, topic):
         leaning /= (commentAmount * len(topicToLeaning.keys()))
     else: return [0,0]
     return leaning 
+
+def GetModelScore(dataPoint, model):
+    if model == "mistral_sentiment" or model == "mistral_sentiment_demojified":
+        return 1
+    else: return dataPoint["classification"][model]["score"]
+
+def GetModelLabel(dataPoint, model):
+    if model == "mistral_sentiment" or model == "mistral_sentiment_demojified":
+        return dataPoint["classification"][model]
+    else: return dataPoint["classification"][model]["label"]
+         
 
 def CollectCommentLeanings(comments, topic, models, minimumConfidence, demojify, englishOnly, englishConfidence, humanOnly, humanConfidence, choice, ignoreNeutral):
     """
@@ -70,45 +81,61 @@ def CollectCommentLeanings(comments, topic, models, minimumConfidence, demojify,
                 if dataPoint["classification"]["roberta_language_demojified"]["label"] != "en" or dataPoint["classification"]["roberta_language"]["score"] < englishConfidence: continue
             if humanOnly:
                 if dataPoint["classification"]["roberta_ai_demojified"]["label"] != "Human" or dataPoint["classification"]["roberta_ai"]["score"] < humanConfidence: continue
-            highestConfidence = 0
-            bestPrediction = 0
             
+            highestConfidence = 0
+            bestPrediction = 1e10
             if choice == "weighted":
                     # maybe not right, definitely not normalized
                     bestPrediction = 0
+                    usedModels = 0
                     for model in models:
-                        currentModelConfidence = dataPoint["classification"][model]["score"]
-                        currentModelPrediction = dataPoint["classification"][model]["label"]
+                        currentModelConfidence = GetModelScore(dataPoint, model)
+                        if currentModelConfidence < minimumConfidence: continue
+                        currentModelPrediction = GetModelLabel(dataPoint, model)
+                        usedModels += 1
                         bestPrediction += currentModelConfidence * currentModelPrediction
+                    # print(f"AMOUNT: {len(models)}")                    
+                    if len(models) > 3: 
+                        print(bestPrediction) 
+                        print(usedModels) 
+                    if usedModels == 0:    
+                        bestPrediction == 1e10
+                    else:   
+                        bestPrediction /= usedModels
             elif choice == "highest": 
                     for model in models:
-                        currentModelConfidence = dataPoint["classification"][model]["score"]
-                        currentModelPrediction = dataPoint["classification"][model]["label"]
+                        currentModelConfidence = GetModelScore(dataPoint, model)
+                        currentModelPrediction = GetModelLabel(dataPoint, model)
+                        if currentModelConfidence < minimumConfidence: continue
                         if currentModelConfidence > highestConfidence:
                             highestConfidence = currentModelConfidence
-                            bestPrediction = currentModelPrediction 
+                            bestPrediction = currentModelPrediction * currentModelConfidence
             elif choice == "sorted":
                     for model in models:
-                        currentModelConfidence = dataPoint["classification"][model]["score"]
+                        currentModelConfidence = GetModelScore(dataPoint, model)
                         if currentModelConfidence > minimumConfidence:
-                            bestPrediction = dataPoint["classification"][model]["label"]
+                            bestPrediction = GetModelLabel(dataPoint, model) * currentModelConfidence
                             break
             elif choice == "vote":
                     predictions = {0:0,-1:0,1:0}
-                    for model in models:
-                        currentModelPrediction = dataPoint["classification"][model]["label"]
-                        currentModelConfidence = dataPoint["classification"][model]["score"]
+                    for model in models: 
+                        currentModelConfidence = GetModelScore(dataPoint, model)
+                        if currentModelConfidence < minimumConfidence: continue
+                        currentModelPrediction = GetModelLabel(dataPoint, model)
                         predictions[currentModelPrediction] += currentModelConfidence
                     bestPrediction = max(predictions, key=predictions.get)
-                    # print(bestPrediction)
+                    if predictions[bestPrediction] == 0: bestPrediction = 1e10 
             elif choice == "all":
                     for model in models:
-                        bestPrediction = dataPoint["classification"][model]["label"]
-                        commentLeanings.append([bestPrediction*leaning[0],bestPrediction*leaning[1]])
+                        currentModelConfidence = GetModelScore(dataPoint, model)
+                        if currentModelConfidence < minimumConfidence: continue
+                        bestPrediction = GetModelLabel(dataPoint, model) 
+                        commentLeanings.append([bestPrediction*currentModelConfidence*leaning[0],bestPrediction*currentModelConfidence*leaning[1]])
                     continue
             if ignoreNeutral and bestPrediction == 0: 
-                continue 
-            commentLeanings.append([bestPrediction*leaning[0],bestPrediction*leaning[1]])
+                continue
+            if bestPrediction != 1e10: 
+                commentLeanings.append([bestPrediction*leaning[0],bestPrediction*leaning[1]])
     return commentLeanings
 
 def VisualizeData(x, y, fileName):
@@ -145,7 +172,8 @@ def CalculateResults(models,
                      englishOnly=False, englishConfidence=0.8,
                      humanOnly=False, humanConfidence=0.8,
                      choice="highest", 
-                     ignoreNeutral=True):
+                     ignoreNeutral=True,
+                     override=False):
     start = time.time()
     result = {
         # "used_comments": 0,
@@ -176,9 +204,12 @@ def CalculateResults(models,
     fileName += str(minimumConfidence)
 
     # currently skipping already created images
-    if os.path.isfile(f"BachelorThesisBERT/Data/Images/{fileName}.png"):
-        return
-        os.remove(filePath)
+    filePath = f"BachelorThesisBERT/Data/Images/{fileName}.png"
+    if os.path.isfile(filePath):
+        if override: os.remove(filePath)
+        else: return 
+        
+    print(f"Creating {fileName}...")
 
     dataPath = "BachelorThesisBERT/Data/"
     path = f"{dataPath}Classification_CONDENSED/"
@@ -226,36 +257,32 @@ def CalculateResults(models,
         yData.append(v[1]) 
     VisualizeData(xData, yData, fileName)
 
-# "distilbert_sentiment", "bertweet_sentiment", "roberta_sentiment", "mistral_sentiment", "bertweet_emotion", "roberta_language", "roberta_ai"
-# dist_tweet_robert_emotion_lang_ai_demojified_vote_ignore
-# CalculateResults(["roberta_sentiment", "distilbert_sentiment", "bertweet_sentiment"], .9, demojify=True, choice="vote", ignoreNeutral=False)
-# CalculateResults(["roberta_sentiment", "distilbert_sentiment", "bertweet_sentiment"], .9, demojify=True, choice="vote", ignoreNeutral=False)
-# CalculateResults(["roberta_sentiment", "distilbert_sentiment", "bertweet_sentiment"], .9, demojify=True, choice="vote", ignoreNeutral=False)
-# CalculateResults(["roberta_sentiment", "distilbert_sentiment", "bertweet_sentiment"], .9, demojify=True, choice="vote", ignoreNeutral=False)
-
 from itertools import combinations  
 comb = [list(combinations(sentimentModels, r)) for r in range(1, len(sentimentModels) + 1)]  
 comb = [list(sublist) for g in comb for sublist in g]
 
 start = time.time()
 for modelList in comb:
-    for certainty in [.7,.8,.9]:
+    for certainty in [.5,.8,.9,.95]:
         for choice in choices: 
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=True, englishOnly=True, ignoreNeutral=True, humanOnly=True)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=True, englishOnly=True, ignoreNeutral=True, humanOnly=False)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=True, englishOnly=True, ignoreNeutral=False, humanOnly=True)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=True, englishOnly=True, ignoreNeutral=False, humanOnly=False)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=True, englishOnly=False, ignoreNeutral=True, humanOnly=True)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=True, englishOnly=False, ignoreNeutral=True, humanOnly=False)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=True, englishOnly=False, ignoreNeutral=False, humanOnly=True)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=True, englishOnly=False, ignoreNeutral=False, humanOnly=False)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=False, englishOnly=True, ignoreNeutral=True, humanOnly=True)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=False, englishOnly=True, ignoreNeutral=True, humanOnly=False)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=False, englishOnly=True, ignoreNeutral=False, humanOnly=True)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=False, englishOnly=True, ignoreNeutral=False, humanOnly=False)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=False, englishOnly=False, ignoreNeutral=True, humanOnly=True)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=False, englishOnly=False, ignoreNeutral=True, humanOnly=False)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=False, englishOnly=False, ignoreNeutral=False, humanOnly=True)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=False, englishOnly=False, ignoreNeutral=False, humanOnly=False)
+            override = False
+            if choice == "weighted": override = True
+            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=True, englishOnly=True, ignoreNeutral=True, humanOnly=True, override=override)
+            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=True, englishOnly=True, ignoreNeutral=True, humanOnly=False, override=override)
+            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=True, englishOnly=True, ignoreNeutral=False, humanOnly=True, override=override)
+            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=True, englishOnly=True, ignoreNeutral=False, humanOnly=False, override=override)
+            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=True, englishOnly=False, ignoreNeutral=True, humanOnly=True, override=override)
+            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=True, englishOnly=False, ignoreNeutral=True, humanOnly=False, override=override)
+            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=True, englishOnly=False, ignoreNeutral=False, humanOnly=True, override=override)
+            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=True, englishOnly=False, ignoreNeutral=False, humanOnly=False, override=override)
+            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=False, englishOnly=True, ignoreNeutral=True, humanOnly=True, override=override)
+            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=False, englishOnly=True, ignoreNeutral=True, humanOnly=False, override=override)
+            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=False, englishOnly=True, ignoreNeutral=False, humanOnly=True, override=override)
+            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=False, englishOnly=True, ignoreNeutral=False, humanOnly=False, override=override)
+            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=False, englishOnly=False, ignoreNeutral=True, humanOnly=True, override=override)
+            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=False, englishOnly=False, ignoreNeutral=True, humanOnly=False, override=override)
+            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=False, englishOnly=False, ignoreNeutral=False, humanOnly=True, override=override)
+            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=False, englishOnly=False, ignoreNeutral=False, humanOnly=False, override=override)
 end = time.time() - start
+# CalculateResults(models=["mistral_sentiment"], minimumConfidence=0.9, demojify=False, choice="weighted", ignoreNeutral=False)
 print(end)

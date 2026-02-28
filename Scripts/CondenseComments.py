@@ -51,7 +51,7 @@ def NormalizeComments(content):
 
     return normalizedContent
 
-for topic in os.listdir("Data/Classification/"):
+for topic in os.listdir("BachelorThesisBERT/Data/Classification/"):
     allComments = {
         "content": {
             "X": {},
@@ -67,15 +67,17 @@ for topic in os.listdir("Data/Classification/"):
         }
     }
     
-    for fileName in os.listdir(f"Data/Classification/{topic}/"):
-        with open(f"Data/Classification/{topic}/{fileName}", "r", encoding="utf-8") as file: 
+    for fileName in os.listdir(f"BachelorThesisBERT/Data/Classification/{topic}/"):
+        with open(f"BachelorThesisBERT/Data/Classification/{topic}/{fileName}", "r", encoding="utf-8") as file: 
             fileContent = json.load(file)
         platform = fileName.split(sep="-")[0]
         media = fileName.split(sep="-")[1].split(sep=".")[0]
 
         print(fileName)
         statistics = fileContent["statistics"]
-        for key in statistics.keys():
+        
+        for key in statistics.keys(): 
+            if isinstance(statistics[key], str): statistics[key] = 0
             if key == "time" and key not in allComments["statistics"].keys():
                 allComments["statistics"]["crawl_time"] += statistics[key]
                 continue
@@ -88,5 +90,5 @@ for topic in os.listdir("Data/Classification/"):
         else:
             allComments["content"][platform][leaning] = fileContent["content"]
     
-    with open(f"Data/Classification_CONDENSED/{topic}.json", "w", encoding="utf-8") as file:
+    with open(f"BachelorThesisBERT/Data/Classification_CONDENSED/{topic}.json", "w", encoding="utf-8") as file:
         json.dump(allComments, file, ensure_ascii=False)
