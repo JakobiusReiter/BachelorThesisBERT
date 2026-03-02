@@ -3,6 +3,7 @@ import Instagram_Playwright as instagram
 import Twitter_Playwright as twitter
 import YouTube_API as youtube_api
 import YouTube_Playwright as youtube
+import Facebook_Playwright as facebook
 
 import time
 import os
@@ -14,8 +15,8 @@ import json
 
 
 
-platforms = [twitter, instagram, tiktok, youtube]
-platformStrings = ["X", "Instagram", "TikTok", "YouTube"]
+platforms = [twitter, instagram, tiktok, youtube, facebook]
+platformStrings = ["X", "Instagram", "TikTok", "YouTube", "Facebook"]
 dataPath = "Data/"
 matrix = pd.read_csv(dataPath+"Posts.csv", dtype=str, delimiter=";").to_numpy()
 
@@ -26,13 +27,15 @@ for i, row in enumerate(matrix):
     if not os.path.exists(path):
         os.makedirs(path)
 
-    for col in range(2,6):
+    for col in range(2,7):
         allComments = dict.fromkeys(("content", "statistics"), "")
         allComments["statistics"] = dict.fromkeys(("amount", "crawl_time"), "")
 
         currentPlatform = platformStrings[col-2]
         filePath = f"{path}/{currentPlatform}-{media}.json"
-        if os.path.exists(filePath): continue
+        if os.path.exists(filePath):
+            print("already exists")
+            continue
         start = time.time()
         link = row[col]
         if link == "NF": continue

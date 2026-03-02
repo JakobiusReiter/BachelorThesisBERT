@@ -3,13 +3,6 @@ import time
 import random
 import json
 
-def GetVideoID(link):
-    return link.split("/")[-2]
-
-def StoreComments(link, comments):
-    with open(GetVideoID(link)+".json", 'w', encoding="utf-8") as myfile:
-        json.dump(comments, myfile, ensure_ascii=False)
-
 def GetComments(commentsContainer, firstRun=False):
     # get comments from loaded DOM
     commentLocators = commentsContainer.locator(":scope > *").first.locator(":scope > *").nth(2).locator(":scope > *")
@@ -29,7 +22,7 @@ def Scroll(oldHeight, commentsContainer):
     newHeight = oldHeight
     for i in range(50):
         commentsContainer.evaluate( "(el) => el.scrollTop = el.scrollHeight" )
-        time.sleep(random.uniform(.2,.5))
+        time.sleep(random.uniform(1,2))
         newHeight = commentsContainer.evaluate( "(el) => el.scrollHeight" )
         if newHeight != oldHeight:
             return newHeight
@@ -42,45 +35,44 @@ def ExecuteCrawl(link):
         browser = p.chromium.connect_over_cdp("http://localhost:9222")
         context = browser.contexts[0]
         page = context.new_page()
-        page.goto(link, timeout=60000)
 
+        page.goto(link, timeout=60000)
+        # time.sleep(random.uniform(1,2))
+        # page.locator(":scope > .x5yr21d").click()
         time.sleep(random.uniform(1,2))
 
-        commentsContainer = page.query_selector_all(
-            "div.xb57i2i.x1q594ok.x5lxg6s.x78zum5.xdt5ytf.x6ikm8r.x1ja2u2z."
-            "x1pq812k.x1rohswg.xfk6m8.x1yqm8si.xjx87ck.x1l7klhg.x1iyjqo2."
-            "xs83m0k.x2lwn1j.xx8ngbg.xwo3gff.x1oyok0e.x1odjw0f.x1n2onr6.xq1qtft"
-        )[0]
-        viewMoreCommentsSpan = page.get_by_role("button", name="View more comments")
+        indexes = page.evaluate(
+        """() => {
+        return Array.from(
+            document.querySelectorAll(
+            'div.x5yr21d.xw2csxc.x1odjw0f.x1n2onr6'
+            )
+        ) .map((el, i) => el.scrollHeight > el.clientHeight ? i : null)
+        .filter(i => i !== null);
+        } """)
+        base = page.locator( "div.x5yr21d.xw2csxc.x1odjw0f.x1n2onr6" )
+        commentsContainer = [base.nth(i) for i in indexes]
+        commentsContainer = commentsContainer[0]
         commentsContainer.evaluate( "el => el.scrollTop = el.scrollHeight" )
-        viewMoreCommentsSpan.click()
 
         last_height = 0
         iterationCount = 0
         commentTexts = []
-        i = 0
-        while i < 1:
-            i+=1
+        while True:
             iterationCount += 1
 
             newHeight = Scroll(last_height, commentsContainer)
-            # if (last_height == newHeight): break
+            if (last_height == newHeight): break
             last_height = newHeight
-            viewMoreCommentsSpan.click()
-            
-            help = page.locator("div[style='text-align:start']")
-            for x in range(help.count()):
-                print(help.nth(x))
 
-
-    #         if iterationCount >= 10:
-    #             iterationCount = 0
-    #             commentTexts.extend(GetComments(commentsContainer, firstRun))
-    #             if firstRun: firstRun = False
-    #             time.sleep(random.uniform(1,3))
-    #     commentTexts.extend(GetComments(commentsContainer, firstRun))
-    #     page.close()
-    # return commentTexts
+            if iterationCount >= 10:
+                iterationCount = 0
+                commentTexts.extend(GetComments(commentsContainer, firstRun))
+                if firstRun: firstRun = False
+                time.sleep(random.uniform(1,3))
+        commentTexts.extend(GetComments(commentsContainer, firstRun))
+        page.close()
+    return commentTexts
     # StoreComments(link, commentTexts)
 
-ExecuteCrawl("https://www.facebook.com/photo.php?fbid=1297321642257695&set=pb.100059396147148.-2207520000&type=3")
+# ExecuteCrawl("https://www.instagram.com/p/DS-yA22iony/?hl=de")
