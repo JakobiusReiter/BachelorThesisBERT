@@ -29,7 +29,13 @@ def ExecuteCrawl(link):
         last_height = 0
         while True:
             commentsScroll.evaluate( "(el) => el.scrollTop = el.scrollHeight" )
-            time.sleep(random.uniform(1,2))
+            time.sleep(random.uniform(.05,.1))
+            commentsScroll.evaluate( "(el) => el.scrollTop = el.scrollHeight" )
+            time.sleep(random.uniform(.05,.1))
+            commentsScroll.evaluate( "(el) => el.scrollTop = el.scrollHeight" )
+            time.sleep(random.uniform(.05,.1))
+            commentsScroll.evaluate( "(el) => el.scrollTop = el.scrollHeight" )
+            time.sleep(random.uniform(.05,.1))
 
             # check if new content appeared
             newHeight = commentsScroll.evaluate( "(el) => el.scrollHeight" )
@@ -45,7 +51,7 @@ def ExecuteCrawl(link):
             commentText = commentLocators.nth(i).locator("span[data-e2e*='comment-level-1']")
             if (commentText.count() <= 0): continue
             txt = commentText.inner_text().strip()
-            # print(txt)
+            print(txt)
             if (txt == ""): continue
             commentTexts.append(txt)
         page.close()

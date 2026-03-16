@@ -12,17 +12,13 @@ import json
 
 # chrome --remote-debugging-port=9222 --user-data-dir="C:\chrome-playwright"
 
-
-
-
 platforms = [twitter, instagram, tiktok, youtube, facebook]
 platformStrings = ["X", "Instagram", "TikTok", "YouTube", "Facebook"]
-dataPath = "Data/"
-matrix = pd.read_csv(dataPath+"Posts.csv", dtype=str, delimiter=";").to_numpy()
-
+dataPath = "BachelorThesisBERT/Data/"
+matrix = pd.read_csv(dataPath+"Posts.csv", dtype=str, delimiter=";").to_numpy() 
 for i, row in enumerate(matrix):
     title = row[0]
-    media = row[1]
+    media = row[1] 
     path = dataPath + "Comments/" + title
     if not os.path.exists(path):
         os.makedirs(path)
@@ -36,13 +32,19 @@ for i, row in enumerate(matrix):
         if os.path.exists(filePath):
             print("already exists")
             continue
-        start = time.time()
         link = row[col]
-        if link == "NF": continue
+        if link == "NF" or link == "" or link == " ":
+            print("no link provided")
+            continue
+        start = time.time()
+        print(link)
+        # if link in ["https://www.facebook.com/photo?fbid=1235860008403859"]: continue
+        
         print(currentPlatform)
         if currentPlatform == "YouTube":
             comments = youtube_api.CallAPI(link)
-        else: 
+        elif currentPlatform == "Facebook":
+            # if "/photo" or "/posts/" not in link: continue 
             comments = platforms[col-2].ExecuteCrawl(link)
         allComments["content"] = comments
         allComments["statistics"]["crawl_time"] = time.time() - start

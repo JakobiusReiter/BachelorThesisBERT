@@ -1,0 +1,105 @@
+{
+    "Alex Pretti shooting": {
+        "X": {
+            "CENTER": 142,
+            "RIGHT": 231,
+            "LEFT": 68
+        },
+        "Instagram": {
+            "CENTER": 418,
+            "RIGHT": 61,
+            "LEFT": 1043
+        },
+        "TikTok": {
+            "CENTER": 1235,
+            "RIGHT": 215,
+            "LEFT": 354
+        },
+        "YouTube": {
+            "CENTER": 1399,
+            "RIGHT": 2002,
+            "LEFT": 1215
+        }
+    },
+    "Minneapolis ICE shooting protests": {
+        "X": {
+            "RIGHT": 255
+        },
+        "Instagram": {
+            "CENTER": 1195,
+            "RIGHT": 495,
+            "LEFT": 257
+        },
+        "TikTok": {
+            "CENTER": 268,
+            "RIGHT": 127,
+            "LEFT": 269
+        },
+        "YouTube": {
+            "CENTER": 1544,
+            "RIGHT": 3756,
+            "LEFT": 636
+        }
+    },
+    "Trump inauguration": {
+        "X": {
+            "CENTER": 64,
+            "RIGHT": 74
+        },
+        "Instagram": {
+            "RIGHT": 324,
+            "CENTER": 80
+        },
+        "TikTok": {
+            "CENTER": 1695,
+            "RIGHT": 463,
+            "LEFT": 2701
+        },
+        "YouTube": {
+            "CENTER": 1208,
+            "RIGHT": 1636,
+            "LEFT": 129
+        }
+    },
+    "US attacks Venezuela": {
+        "X": {
+            "CENTER": 231,
+            "RIGHT": 305,
+            "LEFT": 82
+        },
+        "Instagram": {
+            "CENTER": 844,
+            "RIGHT": 1232,
+            "LEFT": 473
+        },
+        "TikTok": {
+            "CENTER": 2181,
+            "RIGHT": 3813,
+            "LEFT": 6024
+        },
+        "YouTube": {
+            "CENTER": 1074,
+            "LEFT": 359
+        }
+    },
+    "Zohran Mamdani sworn in": {
+        "X": {
+            "CENTER": 199,
+            "RIGHT": 292
+        },
+        "Instagram": {
+            "CENTER": 2002,
+            "RIGHT": 705,
+            "LEFT": 220
+        },
+        "TikTok": {
+            "CENTER": 4173,
+            "RIGHT": 985
+        },
+        "YouTube": {
+            "CENTER": 710,
+            "RIGHT": 219,
+            "LEFT": 65
+        }
+    }
+}

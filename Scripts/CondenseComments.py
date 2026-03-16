@@ -3,28 +3,17 @@ import os, json
 """
 This document serves to condense the entirety of the collected, already classified comments into topic files.
 Internally, the structure looks like
-{
-    "content": {
-        platform: {
-            leaning: [
-                comment1: {
-                    "content":
-                    "classification":
-                }
-            ] 
-        }
-    }
-    "statistics": {
 
-    }
-}
+(content->platform->leaning->commentList),
+(statistics)
 """
 
 mediaToLeaning = {
     "CNN": "CENTER",
     "ORF": "CENTER",
     "FOX": "RIGHT",
-    "MSNBC": "LEFT"
+    "MSNBC": "LEFT",
+    "Reuters": "CENTER"
 }
 
 def NormalizeComments(content):
@@ -57,7 +46,8 @@ for topic in os.listdir("BachelorThesisBERT/Data/Classification/"):
             "X": {},
             "Instagram": {},
             "TikTok": {},
-            "YouTube": {}
+            "YouTube": {},
+            "Facebook": {}
         },
         "statistics": {
             "amount": 0,

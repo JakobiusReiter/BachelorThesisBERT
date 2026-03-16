@@ -142,7 +142,8 @@ for modelName in models:
             if os.path.exists(filePath):
                 with open(filePath, "r", encoding="utf-8") as file: 
                     fileContent = json.load(file)
-                # skip if already calculated this model 
+                # skip if already calculated this model  
+                print(filePath)
                 if modelName in fileContent["content"][0]["classification"].keys(): 
                     print(f"{modelName} Analysis already done on {topic}-{fileName}")
                     continue
