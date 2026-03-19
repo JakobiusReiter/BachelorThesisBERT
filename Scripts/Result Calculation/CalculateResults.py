@@ -2,6 +2,7 @@ import json, os, time
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt 
+from itertools import product
 
 # HYPERPARAMETERS
 # which model used for sentiment analysis, multiple different possible - list
@@ -138,15 +139,22 @@ def CollectCommentLeanings(comments, topic, models, minimumConfidence, demojify,
                 commentLeanings.append([bestPrediction*leaning[0],bestPrediction*leaning[1]])
     return commentLeanings
 
-def VisualizeData(x, y, fileName):
+def VisualizeData(x, y, fileName, drawLegend, zoom):
     _, ax = plt.subplots()
-
-    ax.set_xlim(-1, 1)
-    ax.set_ylim(-1, 1)
-    ax.set_xticks([-1, 1])
-    ax.set_yticks([-1, 1])
-    ax.set_xticks(np.linspace(-1, 1, 9), minor=True)
-    ax.set_yticks(np.linspace(-1, 1, 9), minor=True)    
+    if zoom and max(x) < .5 and min(x) > -.5 and max(y) < .5 and min(y) > -.5:
+        l = -.5
+        r = .5
+        gridAmount = 5
+    else:
+        l = -1
+        r = 1
+        gridAmount = 9
+    ax.set_xlim(l, r)
+    ax.set_ylim(l, r)
+    ax.set_xticks([l, r])
+    ax.set_yticks([l, r])
+    ax.set_xticks(np.linspace(l, r, gridAmount), minor=True)
+    ax.set_yticks(np.linspace(l, r, gridAmount), minor=True)    
     ax.grid(True, which="both", linestyle="--", alpha=0.5)
     ax.spines['right'].set_color('none')
     ax.spines['top'].set_color('none')
@@ -155,10 +163,10 @@ def VisualizeData(x, y, fileName):
     ax.yaxis.set_ticks_position('left')
     ax.spines['left'].set_position(('data', 0))
 
-    labels = ["TikTok", "YouTube", "Instagram", "X"]
+    labels = ["TikTok", "YouTube", "Instagram", "X", "Facebook"]
     for i, label in enumerate(labels):
         plt.scatter(x[i], y[i], label=label, marker="x")
-    ax.legend()
+    if drawLegend: ax.legend()
 
     filePath = f"BachelorThesisBERT/Data/Images/{fileName}.png"
     
@@ -173,7 +181,9 @@ def CalculateResults(models,
                      humanOnly=False, humanConfidence=0.8,
                      choice="highest", 
                      ignoreNeutral=True,
-                     override=False):
+                     override=False,
+                     drawLegend=False,
+                     zoom=False):
     start = time.time()
     result = {
         # "used_comments": 0,
@@ -183,6 +193,7 @@ def CalculateResults(models,
             "YouTube": [],
             "Instagram": [],
             "X": [],
+            "Facebook": []
         },
         "calculation_time": 0,
         "comment_amount": {
@@ -190,6 +201,7 @@ def CalculateResults(models,
             "YouTube": 0,
             "Instagram": 0,
             "X": 0,
+            "Facebook": 0
         }
     }
     # build file name
@@ -202,6 +214,8 @@ def CalculateResults(models,
     fileName += choice + "_"
     if ignoreNeutral: fileName += "ignoreNeutral_"
     fileName += str(minimumConfidence)
+    if zoom: fileName += "_zoomed"
+    if not drawLegend: fileName += "_noLegend"
 
     # currently skipping already created images
     filePath = f"BachelorThesisBERT/Data/Images/{fileName}.png"
@@ -255,34 +269,21 @@ def CalculateResults(models,
     for k,v in result["results"].items():
         xData.append(v[0])
         yData.append(v[1]) 
-    VisualizeData(xData, yData, fileName)
+    VisualizeData(xData, yData, fileName, drawLegend, zoom)
 
 from itertools import combinations  
 comb = [list(combinations(sentimentModels, r)) for r in range(1, len(sentimentModels) + 1)]  
 comb = [list(sublist) for g in comb for sublist in g]
+bitmasks = [list(bits) for bits in product([False, True], repeat=6)]
 
 start = time.time()
+trueFalse = [True, False]
 for modelList in comb:
     for certainty in [.5,.8,.9,.95]:
         for choice in choices: 
-            override = False
-            if choice == "weighted": override = True
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=True, englishOnly=True, ignoreNeutral=True, humanOnly=True, override=override)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=True, englishOnly=True, ignoreNeutral=True, humanOnly=False, override=override)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=True, englishOnly=True, ignoreNeutral=False, humanOnly=True, override=override)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=True, englishOnly=True, ignoreNeutral=False, humanOnly=False, override=override)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=True, englishOnly=False, ignoreNeutral=True, humanOnly=True, override=override)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=True, englishOnly=False, ignoreNeutral=True, humanOnly=False, override=override)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=True, englishOnly=False, ignoreNeutral=False, humanOnly=True, override=override)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=True, englishOnly=False, ignoreNeutral=False, humanOnly=False, override=override)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=False, englishOnly=True, ignoreNeutral=True, humanOnly=True, override=override)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=False, englishOnly=True, ignoreNeutral=True, humanOnly=False, override=override)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=False, englishOnly=True, ignoreNeutral=False, humanOnly=True, override=override)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=False, englishOnly=True, ignoreNeutral=False, humanOnly=False, override=override)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=False, englishOnly=False, ignoreNeutral=True, humanOnly=True, override=override)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=False, englishOnly=False, ignoreNeutral=True, humanOnly=False, override=override)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=False, englishOnly=False, ignoreNeutral=False, humanOnly=True, override=override)
-            CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=False, englishOnly=False, ignoreNeutral=False, humanOnly=False, override=override)
+            for bitmask in bitmasks:
+                override = False
+                CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=bitmask[0], englishOnly=bitmask[1], ignoreNeutral=bitmask[2], humanOnly=bitmask[3], override=override, drawLegend=bitmask[4], zoom=bitmask[5])
 end = time.time() - start
 # CalculateResults(models=["mistral_sentiment"], minimumConfidence=0.9, demojify=False, choice="weighted", ignoreNeutral=False)
 print(end)
