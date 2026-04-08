@@ -38,12 +38,11 @@ for i, row in enumerate(matrix):
             continue
         start = time.time()
         print(link)
-        # if link in ["https://www.facebook.com/photo?fbid=1235860008403859"]: continue
-        
         print(currentPlatform)
+
         if currentPlatform == "YouTube":
             comments = youtube_api.CallAPI(link)
-        elif currentPlatform == "Facebook":
+        else:
             # if "/photo" or "/posts/" not in link: continue 
             comments = platforms[col-2].ExecuteCrawl(link)
         allComments["content"] = comments

@@ -35,13 +35,14 @@ def GetComments(page, highestOffset, allComments):
             elif tagName == "img":
                 completeText += child.get_attribute("alt")
         allComments.append(completeText)
+        print(completeText)
     highestOffset = value
     return highestOffset
 
 def ExecuteCrawl(link):
     allComments = [] 
     highestOffset = -1
-
+     
     with sync_playwright() as p:
         browser = p.chromium.connect_over_cdp("http://localhost:9222")
 
@@ -53,9 +54,11 @@ def ExecuteCrawl(link):
         previousHighestOffset = 0
         while (previousHighestOffset != highestOffset):
             previousHighestOffset = highestOffset
+            print("collecting")
             highestOffset = GetComments(page, highestOffset, allComments)
+            print("scrolling")
             page.mouse.wheel(0,3000)
-            time.sleep(random.uniform(1,2))
+            time.sleep(random.uniform(.1,.2))
         
         page.close()
     return allComments

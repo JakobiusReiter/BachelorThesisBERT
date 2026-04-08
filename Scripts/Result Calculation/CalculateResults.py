@@ -1,5 +1,4 @@
 import json, os, time
-import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt 
 from itertools import product
@@ -12,11 +11,14 @@ from itertools import product
 # accept / ignore AI comments - bool
 #   only accept human comments of which confidence? - float in [0,1]
 topicToLeaning = {
-    "Trump inauguration": [.9, .8],
-    "US attacks Venezuela": [.7, .9], 
-    "Zohran Mamdani sworn in": [-.9, -.8], 
-    "Minneapolis ICE shooting protests": [-.9, -.7],
-    "Alex Pretti shooting": [.4,1]
+    # economic (left/right)
+    # political (libertarian/authoritarian)
+    "Trump inauguration": [.9, .9],
+    "Minneapolis ICE shooting protests": [-.3, -.9],
+    "Alex Pretti shooting": [0, 1],
+    "Zohran Mamdani sworn in": [-1, -.8], 
+    "US attacks Venezuela": [.8, .5],
+    "US attacks Iran": [.8, .5]
 }
 models = ["distilbert_sentiment", "bertweet_sentiment", "roberta_sentiment", "bertweet_emotion", "roberta_language", "roberta_ai", "mistral_sentiment"]
 sentimentModels = ["distilbert_sentiment", "bertweet_sentiment", "roberta_sentiment", "mistral_sentiment"]

@@ -22,14 +22,16 @@ topicToPrompt = {
     "Trump inauguration":  "Trump's second inauguration as the 47th president of the United States",
     "US attacks Venezuela": "US attacks on Venezuela in which sitting president Nicolas Madura was forcefully extracted to a New York City prison",
     "Zohran Mamdani sworn in": "The inauguration of Zohran Mamdani as the 112th mayor of New York City",
-    "Alex Pretti shooting": "The unlawful shooting of nurse Alex Pretti during an anti-ICE protest"
+    "Alex Pretti shooting": "The unlawful shooting of nurse Alex Pretti during an anti-ICE protest",
+    "US attacks Iran": "The attacks on Iran carried out by the United States and Israel"
 }
 topicToPositiveExamples = {
     "Minneapolis ICE shooting protests": "1. Supports the protests/protesters\n2. Is anti-trump or anti-ice or anti-dhs\n3. is pro-immigration",
     "Trump inauguration":  "1. Supports Trump\n2. Is anti-immigration, anti-socialist, anti-communist, or anti-democrat",
     "US attacks Venezuela": "1. Supports the attack, Trump, or ICE\n2. Dislikes Venezuela",
     "Zohran Mamdani sworn in": "1. Supports Zohran Mamdani\n2. Is pro-communist, pro-socialist, or pro-democrat\n3. Is anti-ICE, anti-DHS, or anti-Trump",
-    "Alex Pretti shooting": "1. Supports ICE, Trump, or DHS\n2. Blames Pretti for his own death"
+    "Alex Pretti shooting": "1. Supports ICE, Trump, or DHS\n2. Blames Pretti for his own death",
+    "US attacks Iran": "1. Supports the attacks on Iran\n2. Thinks Iran is dangerous to Israel, the United States or the world at large\n3. Thinks Iran is a terrorist state\n4. Thinks Iran has or is producing nukes"
 }
 
 # replace links with HTTPURL and @ mentions with @USER
@@ -143,10 +145,10 @@ for modelName in models:
                 with open(filePath, "r", encoding="utf-8") as file: 
                     fileContent = json.load(file)
                 # skip if already calculated this model  
-                print(filePath)
-                if modelName in fileContent["content"][0]["classification"].keys(): 
-                    print(f"{modelName} Analysis already done on {topic}-{fileName}")
-                    continue
+                # print(filePath)
+                if modelName in fileContent["content"][0]["classification"].keys(): continue
+                print(f"{modelName} analyzing on topic \"{topic}\" in {fileName}")
+                
             # build dict structure because this is the first application of any AI on these comments
             else:
                 with open(f"{dataPath}Comments/{topic}/{fileName}", "r", encoding="utf-8") as file: 
@@ -190,7 +192,7 @@ for modelName in models:
                 statistics["bert_analysis_time"] = statistics["bert_analysis_time"] + (time.time() - start)
             
             # store comments in dict
-            print(fileName)
+            # print(fileName)
             for i, classification in enumerate(analyzedComments):
                 fileContent["content"][i]["classification"][modelName] = classification
                 fileContent["content"][i]["classification"][modelName + "_demojified"] = analyzedCommentsDemojified[i]
