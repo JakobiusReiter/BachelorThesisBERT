@@ -264,8 +264,6 @@ def CalculateResults(models,
     with open(f"{dataPath}Analysis/output.json", "w") as file: 
         json.dump(result, file, ensure_ascii=False)
 
-    
-
     xData = []
     yData = []
     for k,v in result["results"].items():
@@ -287,5 +285,4 @@ for modelList in comb:
                 override = False
                 CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=bitmask[0], englishOnly=bitmask[1], ignoreNeutral=bitmask[2], humanOnly=bitmask[3], override=override, drawLegend=bitmask[4], zoom=bitmask[5])
 end = time.time() - start
-# CalculateResults(models=["mistral_sentiment"], minimumConfidence=0.9, demojify=False, choice="weighted", ignoreNeutral=False)
 print(end)
