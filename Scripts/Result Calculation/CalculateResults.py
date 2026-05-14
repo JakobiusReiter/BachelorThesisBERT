@@ -16,9 +16,9 @@ topicToLeaning = {
     "Trump inauguration": [.9, .9],
     "Minneapolis ICE shooting protests": [-.3, -.9],
     "Alex Pretti shooting": [0, 1],
-    "Zohran Mamdani sworn in": [-1, -.8], 
-    "US attacks Venezuela": [.8, .5],
-    "US attacks Iran": [.8, .5]
+    "Zohran Mamdani sworn in": [-.9, -.7], 
+    "US attacks Venezuela": [.3, .7],
+    "US attacks Iran": [.3, .7]
 }
 models = ["distilbert_sentiment", "bertweet_sentiment", "roberta_sentiment", "bertweet_emotion", "roberta_language", "roberta_ai", "mistral_sentiment"]
 sentimentModels = ["distilbert_sentiment", "bertweet_sentiment", "roberta_sentiment", "mistral_sentiment"]
@@ -32,6 +32,7 @@ modelToModelShort = {
     "roberta_language": "language",
     "roberta_ai": "ai"
 }
+BASE_PATH = os.getcwd()
 
 def CalculateLeaning(negative, neutral, positive, topic):
     leaning = np.array([0.0,0.0])
@@ -170,7 +171,7 @@ def VisualizeData(x, y, fileName, drawLegend, zoom):
         plt.scatter(x[i], y[i], label=label, marker="x")
     if drawLegend: ax.legend()
 
-    filePath = f"BachelorThesisBERT/Data/Images/{fileName}.png"
+    filePath = f"{BASE_PATH}/Data/Images/{fileName}.png"
     
     plt.savefig(filePath)
     plt.close()
@@ -183,7 +184,7 @@ def CalculateResults(models,
                      humanOnly=False, humanConfidence=0.8,
                      choice="highest", 
                      ignoreNeutral=True,
-                     override=False,
+                     override=True,
                      drawLegend=False,
                      zoom=False):
     start = time.time()
@@ -219,16 +220,45 @@ def CalculateResults(models,
     if zoom: fileName += "_zoomed"
     if not drawLegend: fileName += "_noLegend"
 
+    files = [
+        "dist_highest_0.95",
+        "tweet_highest_0.95",
+        "roberta_highest_0.95",
+        "mistral_highest_0.95",
+        "dist_demojified_highest_0.95",
+        "dist_ai_demojified_highest_0.95_noLegend",
+        "dist_language_ai_demojified_highest_0.95_noLegend",
+        "tweet_demojified_highest_0.95",
+        "tweet_ai_demojified_highest_0.95_noLegend",
+        "tweet_language_ai_demojified_highest_0.95_noLegend",
+        "roberta_demojified_highest_0.95",
+        "roberta_ai_demojified_highest_0.95_noLegend",
+        "roberta_language_ai_demojified_highest_0.95_noLegend",
+        "mistral_demojified_highest_0.95",
+        "mistral_ai_demojified_highest_0.95_noLegend",
+        "mistral_language_ai_demojified_highest_0.95_noLegend",
+        "dist_tweet_roberta_mistral_language_ai_all_0.95",
+        "dist_tweet_roberta_mistral_language_ai_highest_0.95_noLegend",
+        "dist_tweet_roberta_mistral_language_ai_weighted_0.95_noLegend",
+        "dist_tweet_roberta_mistral_language_ai_vote_0.95_noLegend",
+        "dist_tweet_roberta_mistral_language_ai_sorted_0.95_noLegend",
+        "dist_tweet_roberta_mistral_language_ai_all_0.5",
+        "dist_tweet_roberta_mistral_language_ai_all_0.8_noLegend",
+        "dist_tweet_roberta_mistral_language_ai_all_0.9_noLegend",
+        "dist_tweet_roberta_mistral_language_ai_all_0.95_noLegend"
+    ]
+    if fileName not in files:
+        return
+    
     # currently skipping already created images
-    filePath = f"BachelorThesisBERT/Data/Images/{fileName}.png"
+    filePath = f"{BASE_PATH}/Data/Images/{fileName}.png"
     if os.path.isfile(filePath):
         if override: os.remove(filePath)
         else: return 
         
     print(f"Creating {fileName}...")
 
-    dataPath = "BachelorThesisBERT/Data/"
-    path = f"{dataPath}Classification_CONDENSED/"
+    path = f"{BASE_PATH}/Data/Classification_CONDENSED/"
     for topic in os.listdir(path):
         topic=topic.split(".")[0]
         with open(f"{path}/{topic}.json", "r", encoding="utf-8") as file: 
@@ -261,7 +291,7 @@ def CalculateResults(models,
         result["results"][platform] = t
         result["comment_amount"][platform] += commentAmount
 
-    with open(f"{dataPath}Analysis/output.json", "w") as file: 
+    with open(f"{BASE_PATH}/Data/Analysis/output.json", "w") as file: 
         json.dump(result, file, ensure_ascii=False)
 
     xData = []
@@ -283,6 +313,6 @@ for modelList in comb:
         for choice in choices: 
             for bitmask in bitmasks:
                 override = False
-                CalculateResults(modelList,minimumConfidence=certainty, choice=choice, demojify=bitmask[0], englishOnly=bitmask[1], ignoreNeutral=bitmask[2], humanOnly=bitmask[3], override=override, drawLegend=bitmask[4], zoom=bitmask[5])
+                CalculateResults(modelList, minimumConfidence=certainty, choice=choice, demojify=bitmask[0], englishOnly=bitmask[1], ignoreNeutral=bitmask[2], humanOnly=bitmask[3], override=override, drawLegend=bitmask[4], zoom=bitmask[5])
 end = time.time() - start
 print(end)

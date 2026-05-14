@@ -7,7 +7,7 @@ Internally, the structure looks like
 (content->platform->leaning->commentList),
 (statistics)
 """
-
+BASE_PATH = os.getcwd()
 mediaToLeaning = {
     "CNN": "CENTER",
     "ORF": "CENTER",
@@ -40,7 +40,7 @@ def NormalizeComments(content):
 
     return normalizedContent
 
-for topic in os.listdir("BachelorThesisBERT/Data/Classification/"):
+for topic in os.listdir(f"{BASE_PATH}/Data/Classification/"):
     allComments = {
         "content": {
             "X": {},
@@ -57,8 +57,8 @@ for topic in os.listdir("BachelorThesisBERT/Data/Classification/"):
         }
     }
     
-    for fileName in os.listdir(f"BachelorThesisBERT/Data/Classification/{topic}/"):
-        with open(f"BachelorThesisBERT/Data/Classification/{topic}/{fileName}", "r", encoding="utf-8") as file: 
+    for fileName in os.listdir(f"{BASE_PATH}/Data/Classification/{topic}/"):
+        with open(f"{BASE_PATH}/Data/Classification/{topic}/{fileName}", "r", encoding="utf-8") as file: 
             fileContent = json.load(file)
         platform = fileName.split(sep="-")[0]
         media = fileName.split(sep="-")[1].split(sep=".")[0]
@@ -80,5 +80,5 @@ for topic in os.listdir("BachelorThesisBERT/Data/Classification/"):
         else:
             allComments["content"][platform][leaning] = fileContent["content"]
     
-    with open(f"BachelorThesisBERT/Data/Classification_CONDENSED/{topic}.json", "w", encoding="utf-8") as file:
+    with open(f"{BASE_PATH}/Data/Classification_CONDENSED/{topic}.json", "w", encoding="utf-8") as file:
         json.dump(allComments, file, ensure_ascii=False)
