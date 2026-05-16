@@ -220,35 +220,6 @@ def CalculateResults(models,
     if zoom: fileName += "_zoomed"
     if not drawLegend: fileName += "_noLegend"
 
-    files = [
-        "dist_highest_0.95",
-        "tweet_highest_0.95",
-        "roberta_highest_0.95",
-        "mistral_highest_0.95",
-        "dist_demojified_highest_0.95",
-        "dist_ai_demojified_highest_0.95_noLegend",
-        "dist_language_ai_demojified_highest_0.95_noLegend",
-        "tweet_demojified_highest_0.95",
-        "tweet_ai_demojified_highest_0.95_noLegend",
-        "tweet_language_ai_demojified_highest_0.95_noLegend",
-        "roberta_demojified_highest_0.95",
-        "roberta_ai_demojified_highest_0.95_noLegend",
-        "roberta_language_ai_demojified_highest_0.95_noLegend",
-        "mistral_demojified_highest_0.95",
-        "mistral_ai_demojified_highest_0.95_noLegend",
-        "mistral_language_ai_demojified_highest_0.95_noLegend",
-        "dist_tweet_roberta_mistral_language_ai_all_0.95",
-        "dist_tweet_roberta_mistral_language_ai_highest_0.95_noLegend",
-        "dist_tweet_roberta_mistral_language_ai_weighted_0.95_noLegend",
-        "dist_tweet_roberta_mistral_language_ai_vote_0.95_noLegend",
-        "dist_tweet_roberta_mistral_language_ai_sorted_0.95_noLegend",
-        "dist_tweet_roberta_mistral_language_ai_all_0.5",
-        "dist_tweet_roberta_mistral_language_ai_all_0.8_noLegend",
-        "dist_tweet_roberta_mistral_language_ai_all_0.9_noLegend",
-        "dist_tweet_roberta_mistral_language_ai_all_0.95_noLegend"
-    ]
-    if fileName not in files:
-        return
     
     # currently skipping already created images
     filePath = f"{BASE_PATH}/Data/Images/{fileName}.png"
